@@ -13,10 +13,19 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build": "react-scripts build",
     "build:storybook": "build-storybook -s public",
-    "test": "react-scripts test"
+    "test": "react-scripts test --watchAll=false",
+    "test:coverage": "react-scripts test --watchAll=false --coverage",
+    "test:watch": "react-scripts test",
+    "lint": "prettier --check '**/?(.)*.{md,css,scss,js,jsx,ts,tsx,json,yaml,yml,html}'",
+    "format": "prettier --write '**/?(.)*.{md,css,scss,js,jsx,ts,tsx,json,yaml,yml,html}'"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "browserslist": {
     "production": [
@@ -40,6 +49,10 @@
     "@storybook/addon-viewport": "^5.2.8",
     "@storybook/addons": "^5.2.6",
     "@storybook/react": "^5.2.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
+    "prettier": "^1.19.1",
     "react-scripts": "3.2.0",
     "sass": "^1.23.7"
   }
