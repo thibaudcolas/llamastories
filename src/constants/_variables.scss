@@ -1,0 +1,126 @@
+// --------------------------------- Colors -------------------------------------
+$color--primary: #6a737c;
+$color--secondary: #eaeaea;
+$color--tertiary: #f9f9f9;
+
+$color--white: #fff;
+$color--white-95: rgba(255, 255, 255, 0.95);
+$color--black: #000;
+$color--black-90: rgba(0, 0, 0, 0.9);
+$color--black-50: rgba(0, 0, 0, 0.5);
+$color--off-black: #141414;
+$color--grey: #6a737c;
+$color--mid-grey: #767676;
+$color--light-grey: #dadada;
+
+$color--dark-grey: #4a4a4a;
+$color--blue: #005c94;
+$color--sky-blue: #00abe4;
+$color--light-blue: #e6f6fc;
+$color--pale-blue: #f2fbfd;
+$color--border-blue: #d0e1ec;
+$color--mid-blue: #5995b9;
+$color--pink: #e0107f;
+$color--purple: #5b1d68;
+$color--green: #02aeaa;
+$color--dark-green: #006b62;
+$color--light-green: #e7eff4;
+$color--red: #f00;
+$color--input-focus-bg: #e7f1f9;
+$color--table-border: #c3d9e6;
+
+// Button colours
+$button-colours: (
+    primary: (
+        bg: $color--primary,
+        color: #fff,
+    ),
+    secondary: (
+        bg: $color--secondary,
+        color: #000,
+    ),
+    tertiary: (
+        bg: $color--tertiary,
+        color: #000,
+    ),
+);
+
+// --------------------------------- Fonts --------------------------------------
+
+$font--primary: 'Open Sans', Sans-Serif;
+$font--secondary: Sans-Serif;
+
+// Font weights
+$weight--bold: 700;
+$weight--semibold: 600;
+$weight--medium: 400;
+$weight--normal: 300;
+$weight--light: 200;
+
+// Font sizes
+$base-font-size: 16px;
+$base-line-height: 25px;
+$font-sizes: (
+    default: $base-font-size,
+    xxl: 42px,
+    xl: 28px,
+    l: 21px,
+    m: 18px,
+    s: 16px,
+    xs: 14px,
+    xxs: 12px,
+);
+
+// --------------------------------- Breakpoints --------------------------------------
+// Ensure that all breakpoints are duplicated in the gutters array
+
+$breakpoints: (
+    'mob-portrait' '(min-width: 320px)',
+    'mob-landscape' '(min-width: 480px)',
+    'tablet-portrait' '(min-width: 900px)',
+    'tablet-landscape' '(min-width: 1024px)',
+    'desktop' '(min-width: 1280px)',
+    'desktop-wide' '(min-width: 2556px)'
+);
+
+// --------------------------------- Grid Dimensions --------------------------------------
+
+// Wrappers
+$site-width: 1200px;
+$wrapper--small: 790px;
+
+// Grid setup
+$grid: 20px;
+
+// These should match the breakpoints array
+$gutters: (
+    'default': (
+        $grid,
+    ),
+    'mob-portrait': (
+        $grid,
+    ),
+    'mob-landscape': (
+        $grid,
+    ),
+    'tablet-portrait': (
+        $grid,
+    ),
+    'tablet-landscape': (
+        $grid * 1.25,
+    ),
+    'desktop': (
+        $grid * 1.25,
+    ),
+    'desktop-wide': (
+        $grid * 1.5,
+    ),
+) !default;
+
+// --------------------------------- Transitions --------------------------------------
+
+$transition: 0.25s ease-out;
+
+// --------------------------------- Shadows --------------------------------------
+
+$default-shadow: 0 0 4px 0 rgba(50, 50, 48, 0.2);
