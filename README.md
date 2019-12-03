@@ -1,3 +1,45 @@
+# Q3 Storybook workshop
+
+This repository is the starter code for the Storybook workshop we ran on 2019-12-11, as part of the front-end team’s [Q3 Storybook rock](https://docs.google.com/document/d/1RxxItgp3pObVdPqcHu4EYhcAXokAZOrUbnCbcXqeDsM/edit).
+
+## Resources
+
+> 🎥 **Recording of the workshop: TBD**
+
+Useful links:
+
+- [Storybook documentation](https://storybook.js.org/)
+- [Official Storybook tutorials](https://www.learnstorybook.com/)
+- Example: [Sue Ryder OBCS](https://counselling.staging.sueryder.org/storybook/)
+- Example: [Draftail](https://demo.draftail.org/storybook/)
+- Example: [Airbnb’s react-dates](https://airbnb.io/react-dates/)
+- Example: [GOV.UK React](https://govuk-react.github.io/govuk-react/)
+
+## Workshop instructions
+
+Please go through the following steps to set up the workshop project locally:
+
+```sh
+git clone git@git.torchbox.com:thibaudcolas/llamastories.git
+cd llamastories
+nvm use
+npm install
+npm run storybook
+```
+
+If the project is set up correctly this last command should have started a Storybook build in watch mode and opened a new tab in your browser.
+
+```txt
+│   Storybook 5.2.6 started                          │
+│   12 s for manager and 12 s for preview            │
+│                                                    │
+│   Local:            http://localhost:9009/         │
+```
+
+---
+
+# Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
