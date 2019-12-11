@@ -1,7 +1,12 @@
-import { configure } from '@storybook/react';
+import { configure, addDecorator } from '@storybook/react';
+import { withA11y } from '@storybook/addon-a11y';
 
 // Load all files ending in .stories.js.
 const req = require.context('../src', true, /\.stories\.js$/);
+
+// should only be added once
+// best place is in config.js
+addDecorator(withA11y);
 
 configure(() => {
     /* eslint-disable global-require */

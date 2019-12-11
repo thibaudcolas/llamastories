@@ -53,6 +53,7 @@ storiesOf('Button', module)
             <Button
                 theme="secondary"
                 aria-label="View calendar"
+                role="potato"
                 icon="calendar"
             />
         </>
