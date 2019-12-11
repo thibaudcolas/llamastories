@@ -3,6 +3,7 @@ import React from 'react';
 
 import Icon from './Icon';
 
+// Automagically retrieve the list of available icons from the sprite
 const ALL_ICONS = [
     ...document.querySelectorAll('[data-storybook-svg-icons] symbol'),
 ]

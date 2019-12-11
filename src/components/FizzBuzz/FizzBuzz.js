@@ -1,31 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './FizzBuzz.scss';
+
+const themes = {
+    dark: 'fizzbuzz fizzbuzz--dark',
+    light: 'fizzbuzz fizzbuzz--light',
+};
+
 /**
  * Classic FizzBuzz, silly React edition.
  */
-const FizzBuzz = ({ count }) => {
+const FizzBuzz = ({ theme, count }) => {
+    const className = themes[theme];
+
     if (count % 3 === 0) {
         if (count % 5 === 0) {
-            return <span className="fizzbuzz fizzbuzz--fizzbuzz">15</span>;
+            return <div className={className}>15</div>;
         }
 
-        return <span className="fizzbuzz fizzbuzz--fizz">Fizz</span>;
+        return <div className={className}>Fizz</div>;
     }
 
     if (count % 5 === 0) {
-        return <span className="fizzbuzz fizzbuzz--buzz">Buzz</span>;
+        return <div className={className}>Buzz</div>;
     }
 
-    return <span className="fizzbuzz">{count}</span>;
+    return <div className={className}>{count}</div>;
 };
 
 FizzBuzz.propTypes = {
+    theme: PropTypes.oneOf(Object.keys(themes)),
     count: PropTypes.number.isRequired,
 };
 
 FizzBuzz.defaultProps = {
     className: null,
+    theme: 'light',
 };
 
 export default FizzBuzz;
