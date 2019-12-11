@@ -69,7 +69,7 @@ module.exports = ({ config, mode }) => {
         }),
     );
 
-    config.module.rules.push({
+    config.module.rules.unshift({
         test: /\.stories\.jsx?$/,
         loaders: [require.resolve('@storybook/source-loader')],
         enforce: 'pre',
