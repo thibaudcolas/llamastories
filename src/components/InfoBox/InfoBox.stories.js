@@ -4,6 +4,7 @@ import React from 'react';
 import InfoBox from './InfoBox';
 
 const wrapperStyles = {
+    padding: '20px',
     backgroundColor: 'yellow',
 };
 
