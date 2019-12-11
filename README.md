@@ -36,6 +36,10 @@ If the project is set up correctly this last command should have started a Story
 │   Local:            http://localhost:9009/         │
 ```
 
+We’ll go through the stories in this order:
+
+- `App.stories.js` – the basics
+
 ---
 
 # Create React App

@@ -7,9 +7,7 @@ import PropTypes from 'prop-types';
 const FizzBuzz = ({ count }) => {
     if (count % 3 === 0) {
         if (count % 5 === 0) {
-            return (
-                <span className="fizzbuzz fizzbuzz--fizzbuzz">FizzBuzz</span>
-            );
+            return <span className="fizzbuzz fizzbuzz--fizzbuzz">15</span>;
         }
 
         return <span className="fizzbuzz fizzbuzz--fizz">Fizz</span>;
