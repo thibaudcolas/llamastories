@@ -36,9 +36,32 @@ If the project is set up correctly this last command should have started a Story
 │   Local:            http://localhost:9009/         │
 ```
 
+## Workshop material
+
+### Why Storybook
+
+- Similar to django pattern library (& patternlab)
+- Not a standalone styleguide
+- Plays well to the strengths of React – component-driven development, functional programming, static analysis
+- Similar to TDD but for visual aspects
+
+### Using Storybook for development
+
 We’ll go through the stories in this order:
 
 - `App.stories.js` – the basics
+- `FizzBuzz.stories.js` – writing stories 101
+- `Icon.stories.js` – design systems ftw
+- `Button.stories.js`
+- `InfoBox.stories.js`
+
+### Design systems
+
+MDX
+
+https://www.learnstorybook.com/design-systems-for-developers/
+
+https://medium.com/storybookjs/storybook-docspage-e185bc3622bf
 
 ---
 

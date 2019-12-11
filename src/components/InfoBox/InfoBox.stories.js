@@ -1,5 +1,6 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
+// import { withKnobs, text } from '@storybook/addon-knobs';
 
 import InfoBox from './InfoBox';
 
@@ -14,13 +15,16 @@ storiesOf('InfoBox', module)
             <Story />
         </div>
     ))
-    .add('Default', () => (
-        <InfoBox ctaLabel="CTA Text learn more" ctaHref="/faq">
-            <h2>This is a title</h2>
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-            </ul>
-        </InfoBox>
-    ));
+    // .addDecorator(withKnobs)
+    .add('Default', () => {
+        return (
+            <InfoBox ctaLabel={'Read more'} ctaHref="/faq">
+                <h2>This is a title</h2>
+                <ul>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ul>
+            </InfoBox>
+        );
+    });
