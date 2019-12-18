@@ -4,7 +4,7 @@ This repository is the starter code for the Storybook workshop we ran on 2019-12
 
 ## Resources
 
-> 🎥 **Recording of the workshop: TBD**
+> 🎥 **Recording of the workshop**: [Q3 React components development with Storybook workshop 20191211](https://drive.google.com/file/d/1jOSg58WvTPVnRMaH79mgBWkN5QFQfqAz/view)
 
 Useful links:
 
